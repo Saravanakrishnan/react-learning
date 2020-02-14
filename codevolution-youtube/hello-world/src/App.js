@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
 import Greet from './components/Greet';
-// import Welcome from './components/Welcome';
-import Hello from './components/Hello';
+import Welcome from './components/Welcome';
 
 function App() {
 	return (
@@ -14,7 +13,11 @@ function App() {
 				<button>Action</button>
 			</Greet>
 			<Greet name="Ben" heroName="Thor"/>
-			{/*<Welcome/>*/}
+
+
+			<Welcome name="John" heroName="Iron Man"> </Welcome>
+			<Welcome name="Flo" heroName="Captain America"> </Welcome>
+			<Welcome name="Ben" heroName="Thor"> </Welcome>
 			{/*<Hello/>*/}
 		</div>
 	);
