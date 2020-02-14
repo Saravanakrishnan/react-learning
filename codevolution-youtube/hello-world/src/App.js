@@ -7,7 +7,9 @@ import Hello from './components/Hello';
 function App() {
 	return (
 		<div className="App">
-			<Greet name={"John"} heroName={"Iron Man"}/>
+			<Greet name={"John"} heroName={"Iron Man"}>
+				<p>This is children props. </p>
+			</Greet>
 			<Greet name={"Flo"} heroName={"Captain America"}/>
 			<Greet name={"Ben"} heroName={"Thor"}/>
 			{/*<Welcome/>*/}
