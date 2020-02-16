@@ -9,13 +9,13 @@ function App() {
 	return (
 		<div className="App">
 
-			<Counter />
+			{/*<Counter />*/}
 
 			{/*<Message />*/}
 
-			{/*<Greet name="John" heroName="Iron Man">*/}
-			{/*	<p>This is children props. </p>*/}
-			{/*</Greet>*/}
+			<Greet name="John" heroName="Iron Man">
+				<p>This is children props. </p>
+			</Greet>
 			{/*<Greet name="Flo" heroName="Captain America">*/}
 			{/*	<button>Action</button>*/}
 			{/*</Greet>*/}
