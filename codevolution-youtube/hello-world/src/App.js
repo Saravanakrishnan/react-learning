@@ -13,16 +13,16 @@ function App() {
 
 			{/*<Message />*/}
 
-			<Greet name="John" heroName="Iron Man">
-				<p>This is children props. </p>
-			</Greet>
+			{/*<Greet name="John" heroName="Iron Man">*/}
+			{/*	<p>This is children props. </p>*/}
+			{/*</Greet>*/}
 			{/*<Greet name="Flo" heroName="Captain America">*/}
 			{/*	<button>Action</button>*/}
 			{/*</Greet>*/}
 			{/*<Greet name="Ben" heroName="Thor"/>*/}
 
 
-			{/*<Welcome name="John" heroName="Iron Man"> </Welcome>*/}
+			<Welcome name="John" heroName="Iron Man"> </Welcome>
 			{/*<Welcome name="Flo" heroName="Captain America"> </Welcome>*/}
 			{/*<Welcome name="Ben" heroName="Thor"> </Welcome>*/}
 			{/*<Hello/>*/}
