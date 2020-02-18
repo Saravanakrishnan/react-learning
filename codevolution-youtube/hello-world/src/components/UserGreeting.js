@@ -11,11 +11,13 @@ class UserGreeting extends Component {
 
 	render() {
 
-		return (
-			this.state.isLoggedIn ?
-				(<div>Welcome SK!!</div>) :
-				(<div>Welcome Guest!!</div>)
-		);
+		return this.state.isLoggedIn && <div>Welcome SK!!</div>;
+
+		// return (
+		// 	this.state.isLoggedIn ?
+		// 		(<div>Welcome SK!!</div>) :
+		// 		(<div>Welcome Guest!!</div>)
+		// );
 
 		// let message;
 		//
