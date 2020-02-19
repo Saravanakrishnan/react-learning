@@ -11,21 +11,21 @@ class Form extends Component {
 		}
 	}
 
-	handleUsernameChange = (event) => {
+	handleUsernameChange = event => {
 		console.log(event.target.value);
 		this.setState({
 			username: event.target.value
 		});
 	};
 
-	handleCommentsChange = (event) => {
+	handleCommentsChange = event => {
 		console.log(event.target.value);
 		this.setState({
 			comments: event.target.value
 		});
 	};
 
-	handleTopicChange = (event) => {
+	handleTopicChange = event => {
 		console.log(event.target.value);
 		this.setState({
 			topic: event.target.value
@@ -35,7 +35,7 @@ class Form extends Component {
 	render() {
 
 		return (
-			<form>
+			<form onSubmit={this.handleSubmit}>
 				<div>
 					<label>Username</label>
 					<input
@@ -62,6 +62,11 @@ class Form extends Component {
 				<button type='submit'>Submit</button>
 			</form>
 		);
+	}
+
+	handleSubmit = event => {
+		alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`);
+		event.preventDefault();
 	}
 }
 
