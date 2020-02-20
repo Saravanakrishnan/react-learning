@@ -3,7 +3,7 @@ import React from 'react';
 function Columns(props) {
 	const items = [];
 	return (
-		<React.Fragment>
+		<> {/*Empty tag's are also correct. Does the function of React.Fragment*/}
 			{/*{*/}
 			{/*	items.map(item => (*/}
 			{/*		<React.Fragment key={item.id}>*/}
@@ -15,7 +15,7 @@ function Columns(props) {
 			{/*}*/}
 			<td>Name</td>
 			<td>SK</td>
-		</React.Fragment>
+		</>
 	);
 }
 
