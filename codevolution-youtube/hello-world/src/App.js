@@ -6,11 +6,9 @@ import ErrorBoundary from "./components/ErrorBoundary";
 function App() {
 	return (
 		<div className="App">
-			<ErrorBoundary>
-				<Hero heroname="Batman"/>
-				<Hero heroname="Superman"/>
-				<Hero heroname="Joker"/>
-			</ErrorBoundary>
+			<ErrorBoundary><Hero heroname="Batman"/></ErrorBoundary>
+			<ErrorBoundary><Hero heroname="Superman"/></ErrorBoundary>
+			<ErrorBoundary><Hero heroname="Joker"/></ErrorBoundary>
 		</div>
 	);
 }
