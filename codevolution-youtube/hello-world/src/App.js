@@ -11,13 +11,13 @@ function App() {
 			{/*<HoverCounterTwo/>*/}
 			{/*<User render={(isLoggedIn) => isLoggedIn ? 'SK' : 'Guest'}/>*/}
 
-			<CounterTwo
-				render={(count, incrementCount) => (
+			<CounterTwo>
+				{(count, incrementCount) => (
 					<ClickCounterTwo
 						count={count}
 						incrementCount={incrementCount}>
 					</ClickCounterTwo>)}
-			/>
+			</CounterTwo>
 			<CounterTwo
 				render={(count, incrementCount) => (
 					<HoverCounterTwo
