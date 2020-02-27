@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
+import {UserConsumer} from "./UserContent";
 
 class ComponentF extends Component {
 	render() {
-		return (
-			<div>
-				Component F
-			</div>
-		);
+		return <UserConsumer>
+			{
+				username => {
+					return <div>Hello {username}</div>
+				}
+			}
+		</UserConsumer>;
 	}
 }
 
