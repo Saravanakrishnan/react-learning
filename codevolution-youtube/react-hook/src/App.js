@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import HookCounterFour from "./Components/HookCounterFour";
+import HookCounterOne from "./Components/HookCounterOne";
 
 function App() {
 	return (
 		<div className="App">
-			<HookCounterFour/>
+			{/*<ClassCounterOne/>*/}
+			<HookCounterOne/>
 		</div>
 	);
 }
