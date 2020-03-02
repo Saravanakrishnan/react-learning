@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-import ClassMouse from "./Components/ClassMouse";
-import HookMouse from "./Components/HookMouse";
+import MouseContainer from "./Components/MouseContainer";
 
 function App() {
 	return (
 		<div className="App">
-			{/*<ClassMouse/>*/}
-			<HookMouse/>
+			<MouseContainer/>
 		</div>
 	);
 }
