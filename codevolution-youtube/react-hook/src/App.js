@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import HookCounterOne from "./Components/HookCounterOne";
-import ClassCounterOne from "./Components/ClassCounterOne";
+import ClassMouse from "./Components/ClassMouse";
+import HookMouse from "./Components/HookMouse";
 
 function App() {
 	return (
 		<div className="App">
-			{/*<ClassCounterOne/>*/}
-			<HookCounterOne/>
+			{/*<ClassMouse/>*/}
+			<HookMouse/>
 		</div>
 	);
 }
