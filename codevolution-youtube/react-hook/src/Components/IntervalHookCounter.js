@@ -5,14 +5,22 @@ function IntervalHookCounter() {
 
 	const tick = () => {
 		setCount(count + 1)
+		// setCount(prevCount => prevCount + 1) // will also work
 	};
 
 	useEffect(() => {
+
+		function doSomething() {
+			console.log("inside do something");
+		}
+
+		doSomething();
+
 		const interval = setInterval(tick, 1000);
 		return () => {
 			clearInterval(interval);
 		}
-	}, [])
+	}, [count])
 
 
 	return (
