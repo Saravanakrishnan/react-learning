@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 
-function DataFetching() {
+function DataFetchingOne() {
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState('');
 	const [post, setPost] = useState({});
@@ -28,4 +28,4 @@ function DataFetching() {
 	);
 }
 
-export default DataFetching;
+export default DataFetchingOne;
